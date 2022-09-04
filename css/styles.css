@@ -1,6 +1,6 @@
 
 body {
-    font-size: 30px;
+    font-size: 200%;
     font-family: sans-serif;
     background-color: #000000;
 }
@@ -8,12 +8,11 @@ body {
 
 header {
     height: 60px;
-    background: #000000;
+    background: #161616;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
 }
 #posts{
     display: grid;
@@ -26,8 +25,8 @@ header {
     box-shadow: 2px 2px 7px rgb(0 0 0 / 30%);
     margin-bottom: 1rem;
     background-color: #161414;
-    color: white;
-    width: 80%;
+    color: rgb(166, 166, 166);
+    width: 90%;
 }
 
 .para-block {
@@ -40,7 +39,6 @@ header {
 }
 
 .card-title {
-    font-size: 1.2rem;
     text-transform: capitalize;
 }
 .block{
