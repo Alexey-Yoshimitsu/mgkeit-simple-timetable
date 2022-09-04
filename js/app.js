@@ -5,6 +5,7 @@ window.addEventListener("load", async () => {
       console.log("Service worker register success", reg);
     } catch (e) {
       console.log("Service worker register fail");
+      console.log(e)
     }
   }
 
