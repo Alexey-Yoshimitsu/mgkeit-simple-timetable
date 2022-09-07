@@ -6,9 +6,9 @@ body {
 }
 
 
+
 header {
     height: 60px;
-    background: #161616;
     color: white;
     display: flex;
     justify-content: center;
@@ -28,6 +28,7 @@ header {
     color: rgb(166, 166, 166);
     width: 90%;
 }
+
 
 .para-block {
     white-space: pre;
