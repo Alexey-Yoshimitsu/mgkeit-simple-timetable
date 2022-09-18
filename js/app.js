@@ -274,7 +274,7 @@ console.log(date);
 var currentdate = new Date();
 var oneJan = new Date(currentdate.getFullYear(), 0, 1);
 var numberOfDays = Math.floor((currentdate - oneJan) / (24 * 60 * 60 * 1000));
-var result = Math.ceil((currentdate.getDay() + 1 + numberOfDays) / 7);// номер недели в году
+var result = Math.ceil((currentdate.getDay() + 1 + numberOfDays) / 7)+1;// номер недели в году
 
 let dayName = new Intl.DateTimeFormat('ru-RU', {weekday: 'long'}).format()
 document.querySelector(".h2").innerHTML  = `Сегодня ${dayName}, ${date}`
