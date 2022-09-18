@@ -1,9 +1,9 @@
 {
-  "theme_color" : "#000000"
-  "background_color" : "#000000"
-  "display" : "minimal-ui"
-  "scope" : "/"
-  "start_url" : "/"
-  "name" : "МГКЭИТ"
-  "short_name" : "shitlyapp"
+  "theme_color" : "#000000",
+  "background_color" : "#000000",
+  "display" : "minimal-ui",
+  "scope" : "/",
+  "start_url" : "/",
+  "name" : "МГКЭИТ",
+  "short_name" : "shitlyapp",
 }
