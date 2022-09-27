@@ -403,3 +403,4 @@ document.querySelector(".close").addEventListener("touchstart",()=>{
   document.querySelector(".close").style.display="none"
   document.querySelector(".container2").style.display="none"
 })
+
