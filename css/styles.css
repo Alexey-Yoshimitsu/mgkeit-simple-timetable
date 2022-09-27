@@ -27,6 +27,28 @@ header {
     background-color: #161414;
     color: rgb(166, 166, 166);
     width: 90%;
+    color: white;
+    justify-content: center;
+}
+.close{
+    margin-left: 30px;
+    display: none;
+}
+.block2 {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 3px solid rgb(155, 155, 155);
+    box-shadow: 2px 2px 7px rgb(0 0 0 / 30%);
+    margin-bottom: 1rem;
+    background-color: #161414;
+    color: rgb(166, 166, 166);
+    width: 90%;
+    color: white;
+    justify-content: center;
+}
+.container2{
+    display: none;
+    justify-items: center;
 }
 
 
@@ -35,14 +57,21 @@ header {
     display: block;
 }
 
+.para-block2 {
+    white-space: pre;
+    display: block;
+}
+
+
 .para-block:not(:first-of-type) {
     margin-top: 40px;
 }
 
+.para-block2:not(:first-of-type) {
+    margin-top: 40px;
+}
+
+
 .card-title {
     text-transform: capitalize;
-}
-.block{
-    color: white;
-    justify-content: center;
 }
