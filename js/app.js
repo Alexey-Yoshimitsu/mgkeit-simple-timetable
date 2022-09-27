@@ -303,8 +303,11 @@ var result = (new Date()).getWeek()
 let dayName = new Intl.DateTimeFormat('ru-RU', {weekday: 'long'}).format()
 document.querySelector(".h2").innerHTML  = `Сегодня ${dayName}, ${date}`
 const container = document.querySelector("#posts");
+const container2 = document.querySelector(".container2")
 let toDay = currentdate.getDay()-1// день недели в числовом формате от 0-6
 console.log(result)
+
+
 
 if (toDay == -1){toDay = 0}
 function createBlock(obj, day) {
@@ -343,19 +346,60 @@ function createBlock(obj, day) {
  */
   container.append(block)
 }
+
+function createAllDays(obj, day) {
+  let block = document.createElement('div')
+  block.classList.add('block2')
+  block.textContent = `${dayNames[day]} >>>`
+  for (let para of obj) {
+    let paraBlock = document.createElement('div')
+    paraBlock.classList.add('para-block2')
+    paraBlock.textContent = 
+    `${para.title.toUpperCase()}:
+    
+    Кабинет: ${para.kab}
+
+    ПРепод: ${para.name}
+
+    Время: ${para.time}`
+    block.append(paraBlock)
+  }
+  container2.append(block)
+}
+
+
+
 async function loadPosts() {
   let nextDay = toDay == 4 ? 0 : toDay + 1
   //console.log(result)
   if (result % 2 == 0){
     createBlock(timetable.chet[toDay], toDay)
     nextDay == 0 ? createBlock(timetable.nechet[nextDay], nextDay) : createBlock(timetable.chet[nextDay],nextDay)
+    for(let i = 0; i<5; i++){
+      createAllDays(timetable.chet[i], i)
+      
+    }
   } else {
     createBlock(timetable.nechet[toDay], toDay)
     nextDay == 0 ? createBlock(timetable.chet[nextDay], nextDay) : createBlock(timetable.nechet[nextDay],nextDay)
+    for(let i = 0; i<5; i++){
+      createAllDays(timetable.nechet[i], i)
+      
+    }
   }
-
+let state = true
   
   //container.innerHTML = data.map(toCard).join("\n");
 }
-
-
+document.querySelector(".h2").addEventListener("touchstart",()=>{
+  console.log('work')
+  document.querySelector(".container").style.display= "none"
+  document.querySelector(".close").style.display="block"
+  document.querySelector(".container2").style.display="grid"
+})
+document.querySelector(".close").addEventListener("touchstart",()=>{
+  console.log("work2")
+  document.querySelector(".container").style.display= "block"
+  document.querySelector(".close").style.display="none"
+  document.querySelector(".container2").style.display="none"
+})
