@@ -391,16 +391,23 @@ let state = true
   
   //container.innerHTML = data.map(toCard).join("\n");
 }
-document.querySelector(".h2").addEventListener("touchstart",()=>{
-  console.log('work')
-  document.querySelector(".container").style.display= "none"
-  document.querySelector(".close").style.display="block"
-  document.querySelector(".container2").style.display="grid"
-})
-document.querySelector(".close").addEventListener("touchstart",()=>{
-  console.log("work2")
+
+const close ()=>{
   document.querySelector(".container").style.display= "block"
   document.querySelector(".close").style.display="none"
   document.querySelector(".container2").style.display="none"
-})
+}
+
+const h2 () =>{
+  document.querySelector(".container").style.display= "none"
+  document.querySelector(".close").style.display="block"
+  document.querySelector(".container2").style.display="grid"
+}
+
+
+
+document.querySelector(".h2").addEventListener("touchstart",()=>{h2()})
+document.querySelector(".close").addEventListener("touchstart",()=>{close()})
+document.querySelector(".h2").addEventListener("click",()=>{h2()})
+document.querySelector(".close").addEventListener("click",()=>{close()})
 
