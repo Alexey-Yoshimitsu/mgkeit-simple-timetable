@@ -392,13 +392,13 @@ let state = true
   //container.innerHTML = data.map(toCard).join("\n");
 }
 
-const close ()=>{
+const close = ()=>{
   document.querySelector(".container").style.display= "block"
   document.querySelector(".close").style.display="none"
   document.querySelector(".container2").style.display="none"
 }
 
-const h2 () =>{
+const h2 = () =>{
   document.querySelector(".container").style.display= "none"
   document.querySelector(".close").style.display="block"
   document.querySelector(".container2").style.display="grid"
