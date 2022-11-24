@@ -51,39 +51,39 @@
 //    return cached ?? await caches.match('/offline.html')
 //  }
 //}
-
----
-layout: none
----
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js');
-
-const { registerRoute } = workbox.routing;
-const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
-const { CacheableResponse } = workbox.cacheableResponse;
-
-//workbox.core.setCacheNameDetails({
-//  prefix: 'svrooij.io',
-//  suffix: '{{ site.time | date: "%Y-%m" }}'
-//});
-
-registerRoute(
-  '/',
-  new NetworkFirst()
-);
-
-registerRoute(
-  /page[0-99]/,
-  new NetworkFirst()
-)
-
-registerRoute(
-  new RegExp('/\\d{4}/\\d{2}/\\d{2}/.+'),
-  new StaleWhileRevalidate()
-)
 //
-//workbox.precaching.precacheAndRoute([
-//  {% for post in site.posts limit:12 -%}
-//  { url: '{{ post.url }}', revision: '{{ post.date | date: "%Y-%m-%d"}}' },
+//---
+//layout: none
+//---
+//importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js');
+//
+//const { registerRoute } = workbox.routing;
+//const { CacheFirst, NetworkFirst, StaleWhileRevalidate } = workbox.strategies;
+//const { CacheableResponse } = workbox.cacheableResponse;
+//
+////workbox.core.setCacheNameDetails({
+////  prefix: 'svrooij.io',
+////  suffix: '{{ site.time | date: "%Y-%m" }}'
+////});
+//
+//registerRoute(
+//  '/',
+//  new NetworkFirst()
+//);
+//
+//registerRoute(
+//  /page[0-99]/,
+//  new NetworkFirst()
+//)
+//
+//registerRoute(
+//  new RegExp('/\\d{4}/\\d{2}/\\d{2}/.+'),
+//  new StaleWhileRevalidate()
+//)
+////
+////workbox.precaching.precacheAndRoute([
+////  {% for post in site.posts limit:12 -%}
+////  { url: '{{ post.url }}', revision: '{{ post.date | date: "%Y-%m-%d"}}' },
 //  {% endfor -%}
 //  { url: '/', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' },
 //  { url: '/page2', revision: '{{ site.time | date: "%Y%m%d%H%M" }}' },
@@ -106,3 +106,23 @@ registerRoute(
 //  /assets\/(images|icons|css)/,
 //  new CacheFirst()
 //);
+// Change this to your repository name
+var GHPATH = '/github-page-pwa';
+ 
+// Choose a different app prefix name
+var APP_PREFIX = 'gppwa_';
+ 
+// The version of the cache. Every time you change any of the files
+// you need to change this version (version_01, version_02…). 
+// If you don't change the version, the service worker will give your
+// users the old files!
+var VERSION = 'version_00';
+ 
+// The files to make available for offline use. make sure to add 
+// others to this list
+var URLS = [    
+  `${GHPATH}/`,
+  `${GHPATH}/index.html`,
+  `${GHPATH}/css/styles.css`,
+  `${GHPATH}/js/app.js`
+]
