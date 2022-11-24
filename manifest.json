@@ -1,7 +1,7 @@
 {
   "theme_color": "#000000",
   "background_color": "#000000",
-  "display": "standalone",
+  "display": "minimal-ui",
   "scope": "/mgkeit-simple-timetable1/",
   "start_url": "/mgkeit-simple-timetable1/",
   "name": "МГКЭИТ",
