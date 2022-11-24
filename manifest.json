@@ -1,9 +1,9 @@
 {
   "theme_color": "#000000",
   "background_color": "#000000",
-  "display": "minimal-ui",
+  "display": "standalone",
   "scope": "/mgkeit-simple-timetable1/",
   "start_url": "/mgkeit-simple-timetable1/",
   "name": "МГКЭИТ",
-  "short_name": "shitlyapp"
+  "short_name": "расписание МГКЭИТ"
 }
