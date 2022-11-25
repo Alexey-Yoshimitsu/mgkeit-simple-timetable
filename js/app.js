@@ -1,7 +1,8 @@
+
 window.addEventListener("load", async () => {
   if ("serviceWorker" in navigator) {
     try {
-      const reg = await navigator.serviceWorker.register("/sw.js");
+      //const reg = await navigator.serviceWorker.register("/sw.js");
       console.log("Service worker register success", reg);
     } catch (e) {
       console.log("Service worker register fail");
@@ -11,8 +12,6 @@ window.addEventListener("load", async () => {
 
   await loadPosts();
 });
-
-
 const timetable = {
   chet: [
     [
@@ -268,6 +267,8 @@ const timetable = {
   ],
 };
 
+
+
 let dayNames = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница']
 const date = new Date().toLocaleDateString();
 //console.log(date);
@@ -359,9 +360,9 @@ function createAllDays(obj, day) {
     
     Кабинет: ${para.kab}
 
-    ПРепод: ${para.name}
+    Преподователь: ${para.name}
 
-    Время: ${para.time}`
+    Время проведения: ${para.time}`
     block.append(paraBlock)
   }
   container2.append(block)
