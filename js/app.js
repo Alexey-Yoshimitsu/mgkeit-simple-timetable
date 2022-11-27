@@ -16,7 +16,7 @@ const timetable = {
   chet: [
     [
       {
-        title: "Разговоры о 'важном'",
+        title: "Разговоры о важном",
         kab: "408",
         name: "Фейзуллаева Эльвира Мирьяновна",
         time: "8:15-9:00",
@@ -142,7 +142,7 @@ const timetable = {
   nechet: [
     [
       {
-        title: "Разговоры о 'важном'",
+        title: "Разговоры о важном",
         kab: "408",
         name: "Фейзуллаева Эльвира Мирьяновна",
         time: "8:15-9:00",
@@ -323,7 +323,7 @@ function createBlock(obj, day) {
     
     Кабинет: ${para.kab}
 
-    ПРепод: ${para.name}
+    Преподаватель: ${para.name}
 
     Время: ${para.time}`
     block.append(paraBlock)
