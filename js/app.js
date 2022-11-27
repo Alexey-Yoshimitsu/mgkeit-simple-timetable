@@ -375,28 +375,28 @@ function createAllDays(obj, day) {
 
 
 
-//async function loadPosts() {
-//  let nextDay = toDay == 4 ? 0 : toDay + 1
-//  //console.log(result)
-//  if (result % 2 == 0){
-//    createBlock(timetable.chet[toDay], toDay)
-//    nextDay == 0 ? createBlock(timetable.nechet[nextDay], nextDay) : createBlock(timetable.chet[nextDay],nextDay)
-//    for(let i = 0; i<5; i++){
-//      createAllDays(timetable.chet[i], i)
-//      
-//    }
-//  } else {
-//    createBlock(timetable.nechet[toDay], toDay)
-//    nextDay == 0 ? createBlock(timetable.chet[nextDay], nextDay) : createBlock(timetable.nechet[nextDay],nextDay)
-//    for(let i = 0; i<5; i++){
-//      createAllDays(timetable.nechet[i], i)
-//      
-//    }
-//  }
-//let state = true
-//  
-//  //container.innerHTML = data.map(toCard).join("\n");
-//}
+async function loadPosts() {
+  let nextDay = toDay == 4 ? 0 : toDay + 1
+  //console.log(result)
+  if (result % 2 == 0){
+    createBlock(timetable.chet[toDay], toDay)
+    nextDay == 0 ? createBlock(timetable.nechet[nextDay], nextDay) : createBlock(timetable.chet[nextDay],nextDay)
+    for(let i = 0; i<5; i++){
+      createAllDays(timetable.chet[i], i)
+      
+    }
+  } else {
+    createBlock(timetable.nechet[toDay], toDay)
+    nextDay == 0 ? createBlock(timetable.chet[nextDay], nextDay) : createBlock(timetable.nechet[nextDay],nextDay)
+    for(let i = 0; i<5; i++){
+      createAllDays(timetable.nechet[i], i)
+      
+    }
+  }
+let state = true
+  
+  //container.innerHTML = data.map(toCard).join("\n");
+}
 
 const close = ()=>{
   document.querySelector(".container").style.display= "block"
