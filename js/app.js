@@ -328,11 +328,7 @@ function createBlock(obj, day) {
     
     Кабинет: ${para.kab}
 
-<<<<<<< HEAD
     Преподаватель: ${para.name}
-=======
-    Преподователь: ${para.name}
->>>>>>> refs/remotes/origin/master
 
     Время: ${para.time}`
     block.append(paraBlock)
