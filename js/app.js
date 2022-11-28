@@ -335,23 +335,6 @@ function createBlock(obj, day) {
     Время: ${para.time}`
     block.append(paraBlock)
   }
-
-  /* for (let para of obj) {
-    block.textContent += `
-    ${para.title}
-    
-    Кабинет: ${para.kab}
-
-    ПРепод: ${para.name}
-
-    Время: ${para.time}
-
-
-
-
-    `
-  }
- */
   container.append(block)
 }
 
@@ -395,9 +378,7 @@ async function loadPosts() {
       
     }
   }
-let state = true
   
-  //container.innerHTML = data.map(toCard).join("\n");
 }
 
 const close = ()=>{
