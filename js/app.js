@@ -2,7 +2,7 @@
 window.addEventListener("load", async () => {
   if ("serviceWorker" in navigator) {
     try {
-      //const reg = await navigator.serviceWorker.register("/sw.js");
+      const reg = await navigator.serviceWorker.register("/sw.js");
       console.log("Service worker register success", reg);
     } catch (e) {
       console.log("Service worker register fail");
@@ -305,7 +305,6 @@ Date.prototype.getWeek = function(){
   return (days_from_first_monday>=0 && days_from_first_monday<364) ? Math.ceil((days_from_first_monday+1)/7) : 52;
 }
 var result = (new Date()).getWeek()
-//console.log((currentdate.getDay() + 1 + numberOfDays) / 7)
 let dayName = new Intl.DateTimeFormat('ru-RU', {weekday: 'long'}).format()
 document.querySelector(".h2").innerHTML  = `Сегодня ${dayName}, ${date}`
 const container = document.querySelector("#posts");
@@ -380,6 +379,7 @@ async function loadPosts() {
   }
   
 }
+let state = true
 
 const close = ()=>{
   document.querySelector(".container").style.display= "block"
