@@ -107,7 +107,7 @@
 //  new CacheFirst()
 //);
 // Change this to your repository name
-var GHPATH = '/mgkeit-simple-timetable1';
+var GHPATH = '/mgkeit-simple-timetable';
  
 // Choose a different app prefix name
 var APP_PREFIX = 'mgkeit_';
