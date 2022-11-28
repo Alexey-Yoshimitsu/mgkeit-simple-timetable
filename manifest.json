@@ -5,5 +5,12 @@
   "scope": "/mgkeit-simple-timetable/",
   "start_url": "/mgkeit-simple-timetable/",
   "name": "МГКЭИТ",
-  "short_name": "МГКЭИТ"
+  "short_name": "МГКЭИТ",
+  "icons": [
+    {
+      "src": "/github-page-pwa/icon.png",
+      "type": "image/png",
+      "sizes": "700x700"
+    }
+  ]
 }
