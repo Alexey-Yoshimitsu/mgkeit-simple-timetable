@@ -314,8 +314,10 @@ let toDay = currentdate.getDay()-1// день недели в числовом �
 console.log(result)
 
 
+if (toDay > 4){toDay = 0}
 
 if (toDay == -1){toDay = 0}
+
 function createBlock(obj, day) {
   let block = document.createElement('div')
   block.classList.add('block')

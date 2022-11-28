@@ -34,7 +34,10 @@ header {
 }
 .close{
     margin-left: 30px;
-    display: none;
+    display: block;
+    font-weight: bold;
+    font-size: 150%;
+
 }
 .block2 {
     padding: 1rem;
