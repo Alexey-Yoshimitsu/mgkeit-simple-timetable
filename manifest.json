@@ -9,8 +9,7 @@
   "icons": [
     {
       "src": "/github-page-pwa/icon.png",
-      "type": "image/png",
-      "sizes": "700x700"
+      "type": "image/png"
     }
   ]
 }
