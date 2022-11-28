@@ -349,7 +349,7 @@ function createAllDays(obj, day) {
     
     Кабинет: ${para.kab}
 
-    Преподователь: ${para.name}
+    Учитель: ${para.name}
 
     Время проведения: ${para.time}`
     block.append(paraBlock)
