@@ -2,8 +2,8 @@
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "standalone",
-  "scope": "/mgkeit-simple-timetable1/",
-  "start_url": "/mgkeit-simple-timetable1/",
+  "scope": "/mgkeit-simple-timetable/",
+  "start_url": "/mgkeit-simple-timetable/",
   "name": "МГКЭИТ",
-  "short_name": "расписание МГКЭИТ"
+  "short_name": "МГКЭИТ"
 }
