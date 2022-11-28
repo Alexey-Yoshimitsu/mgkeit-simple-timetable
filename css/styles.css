@@ -34,7 +34,7 @@ header {
 }
 .close{
     margin-left: 30px;
-    display: block;
+    display: none;
     font-weight: bold;
     font-size: 150%;
 
