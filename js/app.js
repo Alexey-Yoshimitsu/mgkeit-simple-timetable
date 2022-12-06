@@ -272,6 +272,10 @@ const timetable = {
   ],
 };
 
+//let groupName = "1СА-11-22"
+//window.localStorage.setItem("group",groupName)
+//console.log(window.localStorage.getItem("group"))
+
 
 
 let dayNames = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница']
@@ -306,7 +310,7 @@ Date.prototype.getWeek = function(){
 }
 var result = (new Date()).getWeek()
 let dayName = new Intl.DateTimeFormat('ru-RU', {weekday: 'long'}).format()
-document.querySelector(".h2").innerHTML  = `Сегодня ${dayName}, ${date}`
+document.querySelector(".h2").innerHTML  = `${dayName}, ${date}`
 const container = document.querySelector("#posts");
 const container2 = document.querySelector(".container2")
 let toDay = currentdate.getDay()-1// день недели в числовом формате от 0-6
@@ -320,18 +324,19 @@ if (toDay == -1){toDay = 0}
 function createBlock(obj, day) {
   let block = document.createElement('div')
   block.classList.add('block')
-  block.textContent = `${dayNames[day]} >>>`
+  let daytitle = document.createElement('p')
+  daytitle.textContent = `${dayNames[day]}`
+  block.append(daytitle)
   for (let para of obj) {
     let paraBlock = document.createElement('div')
     paraBlock.classList.add('para-block')
-    paraBlock.textContent = 
-    `${para.title.toUpperCase()}:
+    paraBlock.textContent = `
+    ${para.time}  ----  ${para.title}
     
     Кабинет: ${para.kab}
 
     Учитель: ${para.name}
-
-    Время: ${para.time}`
+    `
     block.append(paraBlock)
   }
   container.append(block)
@@ -340,18 +345,20 @@ function createBlock(obj, day) {
 function createAllDays(obj, day) {
   let block = document.createElement('div')
   block.classList.add('block2')
-  block.textContent = `${dayNames[day]} >>>`
+  let daytitle = document.createElement('p')
+  daytitle.textContent = `${dayNames[day]}`
+  block.append(daytitle)
   for (let para of obj) {
     let paraBlock = document.createElement('div')
     paraBlock.classList.add('para-block2')
     paraBlock.textContent = 
-    `${para.title.toUpperCase()}:
+    `
+    ${para.time}  ----  ${para.title}
     
     Кабинет: ${para.kab}
 
     Учитель: ${para.name}
-
-    Время проведения: ${para.time}`
+    `
     block.append(paraBlock)
   }
   container2.append(block)
