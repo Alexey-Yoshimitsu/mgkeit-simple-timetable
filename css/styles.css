@@ -8,7 +8,6 @@ body {
 
 
 header {
-    height: 0px;
     color: white;
     display: flex;
     justify-content: center;
@@ -31,24 +30,12 @@ header {
     margin-bottom: 20px;
     
 
-}
 .close{
     margin-left: 30px;
     display: none;
     font-weight: bold;
     font-size: 150%;
 
-}
-.block2 {
-    padding: 1rem;
-    border-radius: 30px;
-    border: 5px solid rgb(245, 245, 245);
-    margin-bottom: 1rem;
-    width: 90%;
-    background-color: #161414;
-    color: rgb(166, 166, 166);
-    color: white;
-    justify-content: center;
 }
 .container2{
     margin-top: 20px;
