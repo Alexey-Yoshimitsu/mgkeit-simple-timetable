@@ -22,27 +22,27 @@ header {
 .block {
     display: flex;
     flex-direction: column;
-    width: 100%;
     color: white;
     padding-top: 5px;
     padding-bottom: 20px;
     background-color: #002721;
     margin-bottom: 30px;
+
 }
 .block2 {
     display: flex;
     flex-direction: column;
-    width: 100%;
     color: white;
     padding-top: 5px;
     padding-bottom: 20px;
     background-color: #002721;
     margin-bottom: 30px;
 }
-.block p, .block2 p{
-    align-self: center;
-    font-size: 2em;
+
+.block p .block2 p{
+   align-self: center;
 }
+
 
 .close{
     margin-left: 30px;
@@ -56,16 +56,24 @@ header {
     justify-items: center;
 }
 
+.para-block div{
+    white-space: pre-wrap;
+}
+.para-block2 div{
+    white-space: pre-wrap;
+}
 
 .para-block {
     white-space: pre;
     display: block;
+    padding: 30px; 
     background-color: #004339;
 }
 
 .para-block2 {
     white-space: pre;
     display: block;
+    padding: 30px;
     background-color: #004339;
 }
 

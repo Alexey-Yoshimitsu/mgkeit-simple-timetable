@@ -2,7 +2,7 @@
 window.addEventListener("load", async () => {
   if ("serviceWorker" in navigator) {
     try {
-      const reg = await navigator.serviceWorker.register("/sw.js");
+      //const reg = await navigator.serviceWorker.register("/sw.js");
       console.log("Service worker register success", reg);
     } catch (e) {
       console.log("Service worker register fail");
@@ -33,7 +33,7 @@ const timetable = {
         time: "9:10-10:40",
       },
       {
-        title: "Технологии физического уровня\n    передачи данных",
+        title: "Технологии физического уровня передачи данных",
         kab: "416",
         name: "Перепелкина Алина Геннадьевна",
         time: "11:05-12:35",
@@ -45,7 +45,7 @@ const timetable = {
         time: "13:00-14:30",
       },
       {
-        title: "МДК 01.02\n    Организация, принципы построения\n    и функционирования компьютерных сетей",
+        title: "МДК 01.02 Организация, принципы построения и функционирования компьютерных сетей",
         kab:"312",
         name:"Гаджиев Гаджи Дагирович",
         time:"14:55-16:25"
@@ -53,19 +53,19 @@ const timetable = {
     ],
     [
       {
-        title: "МДК 01.01\n    Компьютерные сети",
+        title: "МДК 01.01 Компьютерные сети",
         kab: "419",
         name: "Балаба Игорь Романович",
         time: "9:10 - 10:40",
       },
       {
-        title: "МДК 01.02\n    Организация, принципы построения\n    и функционирования компьютерных сетей",
+        title: "МДК 01.02 Организация, принципы построения и функционирования компьютерных сетей",
         kab: "317",
         name: "Гаджиев Гаджи Дагирович",
         time: "11:05 - 12:35",
       },
       {
-        title: "МДК 02.02\n    Программное обеспечение компьютерных сетей",
+        title: "МДК 02.02 Программное обеспечение компьютерных сетей",
         kab: "321",
         name: "Медведев Евгений Александрович",
         time: "13:00 - 14:30",
@@ -79,7 +79,7 @@ const timetable = {
         time: "9:10 - 10:40",
       },
       {
-        title: "МДК 02.01\n    Администрирование сетевых операционных систем",
+        title: "МДК 02.01 Администрирование сетевых операционных систем",
         kab: "314",
         name: "Аида Наилевна Зайнуллина",
         time: "11:05 - 12:35",
@@ -91,7 +91,7 @@ const timetable = {
         time: "13:00 - 14:30",
       },
       {
-        title: "МДК 02.02\n    Программное обеспечение компьютерных сетей",
+        title: "МДК 02.02 Программное обеспечение компьютерных сетей",
         kab: "321",
         name: "Медведев Евгений Александрович",
         time: "14:55 - 16:25",
@@ -99,19 +99,19 @@ const timetable = {
     ],
     [
       {
-        title: "МДК 01.01\n    Компьютерные сети",
+        title: "МДК 01.01 Компьютерные сети",
         kab: "419",
         name: "Балаба Игорь Романович",
         time: "9:10-10:40",
       },
       {
-        title: "МДК 02.01\n    Администрирование сетевых операционных систем",
+        title: "МДК 02.01 Администрирование сетевых операционных систем",
         kab: "314",
         name: "Аида Наилевна Зайнуллина",
         time: "11:05 - 12:35",
       },
       {
-        title: "Теория вероятностей и\n    математическая статистика",
+        title: "Теория вероятностей и математическая статистика",
         kab: "208",
         name: "Петрова Елена Александровна",
         time: "13:00-14:30",
@@ -119,19 +119,19 @@ const timetable = {
     ],
     [
       {
-        title: "Технологии физическогo уровня\n    передачи данных",
+        title: "Технологии физическогo уровня передачи данных",
         kab: "324",
         name: "Перепелкина Алина Геннадьевна",
         time: "9:10-10:40",
       },
       {
-        title: "МДК 01.01\n    Компьютерные сети",
+        title: "МДК 01.01 Компьютерные сети",
         kab: "419",
         name: "Балаба Игорь Романович",
         time: "11:05 - 12:35",
       },
       {
-        title: "Теория вероятностей и\n    математическая статистика",
+        title: "Теория вероятностей и математическая статистика",
         kab: "208",
         name: "Петрова Елена Александровна",
         time: "13:00-14:30",
@@ -159,7 +159,7 @@ const timetable = {
         time: "9:10-10:40",
       },
       {
-        title: "Технологии физического уровня\n    передачи данных",
+        title: "Технологии физического уровня передачи данных",
         kab: "416",
         name: "Перепелкина Алина Геннадьевна",
         time: "11:05-12:35",
@@ -171,7 +171,7 @@ const timetable = {
         time: "13:00-14:30",
       },
       {
-        title: "МДК 01.02\n    Организация, принципы\n    построения и функционирования компьютерных сетей",
+        title: "МДК 01.02 Организация, принципы построения и функционирования компьютерных сетей",
         kab:"312",
         name:"Гаджиев Гаджи Дагирович",
         time:"14:55-16:25"
@@ -179,13 +179,13 @@ const timetable = {
     ],
     [
       {
-        title: "МДК 01.01\n    Компьютерные сети",
+        title: "МДК 01.01 Компьютерные сети",
         kab: "419",
         name: "Балаба Игорь Романович",
         time: "9:10 - 10:40",
       },
       {
-        title: "МДК 01.02\n    Организация, принципы\n    построения и функционирования компьютерных сетей",
+        title: "МДК 01.02 Организация, принципы построения и функционирования компьютерных сетей",
         kab: "317",
         name: "Гаджиев Гаджи Дагирович",
         time: "11:05 - 12:35",
@@ -205,7 +205,7 @@ const timetable = {
         time: "9:10 - 10:40",
       },
       {
-        title: "МДК 02.01\n    Администрирование сетевых операционных систем",
+        title: "МДК 02.01 Администрирование сетевых операционных систем",
         kab: "314",
         name: "Аида Наилевна Зайнуллина",
         time: "11:05 - 12:35",
@@ -217,7 +217,7 @@ const timetable = {
         time: "13:00 - 14:30",
       },
       {
-        title: "МДК 02.02\n    Программное обеспечение компьютерных сетей",
+        title: "МДК 02.02 Программное обеспечение компьютерных сетей",
         kab: "321",
         name: "Медведев Евгений Александрович",
         time: "14:55 - 16:25",
@@ -225,19 +225,19 @@ const timetable = {
     ],
     [
       {
-        title: "МДК 01.01\n    Компьютерные сети",
+        title: "МДК 01.01 Компьютерные сети",
         kab: "419",
         name: "Балаба Игорь Романович",
         time: "9:10-10:40",
       },
       {
-        title: "МДК 02.01\n    Администрирование сетевых операционных систем",
+        title: "МДК 02.01 Администрирование сетевых операционных систем",
         kab: "314",
         name: "Аида Наилевна Зайнуллина",
         time: "11:05 - 12:35",
       },
       {
-        title: "МДК 01.01\n    Компьютерные сети",
+        title: "МДК 01.01 Компьютерные сети",
         kab: "419",
         name: "Балаба Игорь Романович",
         time: "13:00-14:30",
@@ -245,13 +245,13 @@ const timetable = {
     ],
     [
       {
-        title: "МДК 01.01\n    Компьютерные сети",
+        title: "МДК 01.01 Компьютерные сети",
         kab: "419",
         name: "Балаба Игорь Романович",
         time: "11:05 - 12:35",
       },
       {
-        title: "Теория вероятностей и\n    математическая статистика",
+        title: "Теория вероятностей и математическая статистика",
         kab: "208",
         name: "Петрова Елена Александровна",
         time: "13:00-14:30",
@@ -263,7 +263,7 @@ const timetable = {
         time: "14:55-16:25",
       },
       {
-        title: "МДК 01.02\n    Организация, принципы построения и\n    функционирования компьютерных сетей",
+        title: "МДК 01.02 Организация, принципы построения и функционирования компьютерных сетей",
         kab: "317",
         name: "Гаджиев Гаджи Дагирович",
         time: "16:35 - 18:05",
@@ -310,7 +310,7 @@ Date.prototype.getWeek = function(){
 }
 var result = (new Date()).getWeek()
 let dayName = new Intl.DateTimeFormat('ru-RU', {weekday: 'long'}).format()
-document.querySelector(".h2").innerHTML  = `${dayName}, ${date}`
+document.querySelector(".h2").innerHTML  = `${dayName.toUpperCase(  )}, ${date}`
 const container = document.querySelector("#posts");
 const container2 = document.querySelector(".container2")
 let toDay = currentdate.getDay()-1// день недели в числовом формате от 0-6
@@ -325,18 +325,21 @@ function createBlock(obj, day) {
   let block = document.createElement('div')
   block.classList.add('block')
   let daytitle = document.createElement('p')
-  daytitle.textContent = `${dayNames[day]}`
+  daytitle.textContent = `-----  ${dayNames[day]}`
   block.append(daytitle)
+
   for (let para of obj) {
     let paraBlock = document.createElement('div')
     paraBlock.classList.add('para-block')
-    paraBlock.textContent = `
-    ${para.time}  ----  ${para.title}
-    
-    Кабинет: ${para.kab}
-
-    Учитель: ${para.name}
-    `
+    let timeInBlock = document.createElement('div')
+    let titleInBlock = document.createElement('div')
+    let kabInBlock = document.createElement('div')
+    let teacherInBlock = document.createElement('div')
+    timeInBlock.textContent = para.time
+    titleInBlock.textContent = para.title
+    kabInBlock.textContent = `Кабинет ${para.kab}`
+    teacherInBlock.textContent = `Преподаватель ${para.name}`
+    paraBlock.append(timeInBlock, titleInBlock, kabInBlock, teacherInBlock)
     block.append(paraBlock)
   }
   container.append(block)
@@ -346,19 +349,20 @@ function createAllDays(obj, day) {
   let block = document.createElement('div')
   block.classList.add('block2')
   let daytitle = document.createElement('p')
-  daytitle.textContent = `${dayNames[day]}`
+  daytitle.textContent = `-----  ${dayNames[day]}`
   block.append(daytitle)
   for (let para of obj) {
     let paraBlock = document.createElement('div')
     paraBlock.classList.add('para-block2')
-    paraBlock.textContent = 
-    `
-    ${para.time}  ----  ${para.title}
-    
-    Кабинет: ${para.kab}
-
-    Учитель: ${para.name}
-    `
+    let timeInBlock = document.createElement('div')
+    let titleInBlock = document.createElement('div')
+    let kabInBlock = document.createElement('div')
+    let teacherInBlock = document.createElement('div')
+    timeInBlock.textContent = para.time
+    titleInBlock.textContent = para.title
+    kabInBlock.textContent = `Кабинет ${para.kab}`
+    teacherInBlock.textContent = `Преподаватель ${para.name}`
+    paraBlock.append(timeInBlock, titleInBlock, kabInBlock, teacherInBlock)
     block.append(paraBlock)
   }
   container2.append(block)
@@ -397,7 +401,7 @@ const close = ()=>{
 const h2 = () =>{
   document.querySelector(".container").style.display= "none"
   document.querySelector(".close").style.display="block"
-  document.querySelector(".container2").style.display="grid"
+  document.querySelector(".container2").style.display="block"
 }
 
 
